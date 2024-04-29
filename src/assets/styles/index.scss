@@ -1,0 +1,124 @@
+@import "./reset";    
+@import "./warning-list";   
+@import "./warning-search"; 
+
+:root {
+  --xxs: 4px;
+  --info:#4A72E5;
+  --primary: #36a4ff;
+  --danger:#FF4D4F;
+  --warning:#FA8B16;
+  --success:#4CC09E;
+  --text-secondary:#8A8A8A;
+  --text-regular:#4B4B4B;
+  --text-title:#202020;
+  --text-light: #BDBDBD;
+  --bg-light:#F6F9FB;
+  --bg-hover:#F9FAFE;
+  --bg-color: #F6F9FB;
+  --bg-body: #F3F4FB;
+  --border-light:#ededed;
+  --border-regular:#CACFD6;
+  --van-text-regular:#4B4B4B !important;
+  --van-nav-bar-height: 44px !important;
+  --van-dropdown-menu-height: calc(var(--van-nav-bar-height) - 2px) !important;
+  --van-nav-bar-title-text-color:#202020 !important;
+  --van-primary-color:#36a4ff !important;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--van-text-regular);
+  background-color: var(--bg-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+#app {
+  height:100vh;
+  width: 100vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.app-container{
+  width:100%;
+  height: calc(100% - var(--van-nav-bar-height));
+  background-color: var(--bg-color);
+  &.TaskSearch {
+    background-color: #FFF;
+  }
+  &.TaskDetails {
+    background-color: var(--bg-body);
+  }
+}
+
+.layout-container {
+  width: 100%;
+  background-color: var(--bg-color);
+  &.TaskSearch {
+    background-color: #FFF;
+  }
+}
+
+.w-full {
+  width:100% !important;
+}
+.h-full {
+  height:100% !important;
+}
+.gap {
+  &-top-4 {
+    margin-top: var(--xxs);
+  }
+  &-top-8 {
+    margin-top: calc(var(--xxs) * 2);
+  }
+  &-top-16 {
+    margin-top: calc(var(--xxs) * 4);;
+  }
+  &-right-8 {
+    margin-right: calc(var(--xxs) * 2);
+  }
+  &-left-16 {
+    margin-left: calc(var(--xxs) * 4);
+  }
+  &-bottom-16 {
+    margin-bottom: calc(var(--xxs) * 4);
+  }
+}
+.ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line, 1);
+  hyphens: none;
+  --disappear-color: 255, 255, 255;
+}
+.border {
+  &-regular {
+    border: 1px solid var(--border-regular);
+  }
+ &-light {
+    border: 1px solid var(--border-light);
+  }
+}

@@ -1,0 +1,41 @@
+.warning-search-page {
+  margin-top: var(--van-nav-bar-height);
+  .title-section {
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8A8A8A;
+    border-bottom: 1px solid #EDEDED;
+  }
+  .search-info {
+    padding-left: 16px;
+    padding-right: 16px;
+    .recent-search {
+      .tags {
+        margin-top: 16px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .tag {
+          padding: 4px 16px;
+          border: 1px solid #EDEDED;
+          border-radius: 100px;
+          font-size: 12px;
+          line-height: 20px;
+          color: #4B4B4B;
+          margin-right: 8px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  .search-result {
+    padding: 16px;
+  }
+}
+.WarningSearch {
+  background-color: #ffffff !important;
+}
